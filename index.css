@@ -90,13 +90,36 @@ color: rgba(137,135, 161,1);
     align-items: center;
     padding: 20px 0px 0px 0px;
 }
+.image-wrapper {
+  position: relative;
+}
+.trusted-badge {
+  position: absolute;
+  top: -80px;
+  left: 80%;
+  width: 200px;
+  height: auto;
+}
+.section-lover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 150px 20px 60px;
+}
+.flower-text ul {
+  padding-left: 20px;
+}
+.flower-text li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
 
 @media  screen and (max-width: 576px) {
     .nav-res{
         display: none;
     }
     .display-flex{
-        padding: 30px 16px 28px 16px;
+        margin: 30px 16px 28px 16px;
     }
     .hero-section{
         flex-direction: column-reverse;
