@@ -1,4 +1,4 @@
-body{
+  body{
     background-color:rgba(245,248,255,1) ;
 }
 .noto-serif{
@@ -27,6 +27,9 @@ body{
 }
 .inter-2{
 color: rgba(137,135, 161,1);
+}
+.primary-font{
+    font-size: 22px;
 }
 .btn-primary{
     background-color: rgba(233,90,8,1);
@@ -96,34 +99,46 @@ color: rgba(137,135, 161,1);
 .trusted-badge {
   position: absolute;
   top: -80px;
-  left: 80%;
+  left: 400px;
   width: 200px;
   height: auto;
 }
 .section-lover{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 150px 20px 60px;
+     padding: 38px 150px 0px 60px;
+}
+.flower-container{
+    display: flex;
 }
 .flower-text ul {
   padding-left: 20px;
 }
-.flower-text li {
-  margin-bottom: 10px;
-  line-height: 1.5;
+.flower-section{
+   display: grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
 }
-
+.img3{
+    grid-row: span 2;
+}
+.flower-section img{
+       border-radius: 10px;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
 @media  screen and (max-width: 576px) {
     .nav-res{
         display: none;
     }
     .display-flex{
-        margin: 30px 16px 28px 16px;
+        padding: 30px 16px 28px 16px;
     }
     .hero-section{
-        flex-direction: column-reverse;
-       padding: 0px 28.5px 0px 0px;
+    flex-direction: column-reverse;
+       /* padding: 0px 28.5px 0px 0px; */
     }
     .li-primary{
         font-size: 14px;
@@ -141,4 +156,26 @@ color: rgba(137,135, 161,1);
         padding: 0px 28.5px 0px 33px;
         font-size: 14px;
     }
+     .flower-container {
+        display: flex;
+       flex-direction: column;
+     }
+    .flower-text ul {
+    padding-left: 0;
+    }
+    .section-lover{
+    padding: 20px 150px 20px 18px;
+   }
+   .trusted-badge{
+    display: none;
+   }
+   .flower-section{
+   display: grid;
+   grid-template-columns:repeat(1,1fr);
+   gap:20px;
+   }
+   .img3{
+    grid-row: span 1;
+    
+}
 }
