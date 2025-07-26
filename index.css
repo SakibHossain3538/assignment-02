@@ -73,7 +73,7 @@ color: rgba(137,135, 161,1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 100px 0px 300px;
     font-size: 22px;
     
 }
@@ -83,7 +83,7 @@ color: rgba(137,135, 161,1);
 .section-card{
         display: grid;
         grid-template-columns: repeat(4,1fr);   
-        gap: 10px;
+        gap: 100px;
 }
 .section-card-name{
     font-size: 22;
@@ -102,6 +102,9 @@ color: rgba(137,135, 161,1);
     justify-content: center;
     align-items: center;
     padding: 20px 0px 0px 0px;
+}
+.section-ul{
+    padding-bottom: 30px;
 }
 .image-wrapper {
   position: relative;
@@ -205,6 +208,7 @@ color: rgba(137,135, 161,1);
     }
     .section-card{
          grid-template-columns: repeat(2,1fr); 
+         gap: 20px;
     }
     .section-new{
         padding: 0px 28.5px 0px 33px;
